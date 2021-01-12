@@ -1,0 +1,61 @@
+.todo {
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  
+    80% {
+      transform: translateX(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.todo li {
+  margin: 15px 20px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  
+    80% {
+      transform: translateX(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.todo button {
+  padding: 3px 10px;
+  border-radius: 3px;
+  background-color: #f56464;
+  font-weight: 500;
+  height: 30px;
+  transition: all 0.3s;
+}
+
+.todo button:hover {
+  background-color: #fa7e7e;
+}
+
+.todo button:active {
+  outline: none;
+}
