@@ -15,7 +15,7 @@ class AddTodo extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     let x = document.forms["todoForm"]["todoTask"].value;
-    if (x == "") {
+    if (x === "") {
         document.getElementById("alert").innerHTML = "Please Enter a Todo"
         return false;
     } // Else Add the todo to the list
